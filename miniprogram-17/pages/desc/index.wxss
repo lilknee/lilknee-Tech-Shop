@@ -1,0 +1,11 @@
+.van-card {
+  color: blue;
+}
+.van-theme-dark body {
+  color: #f5f5f5;
+  background-color: black;
+}
+.auto-size-image {
+  width: 100%;
+  height: auto;
+}

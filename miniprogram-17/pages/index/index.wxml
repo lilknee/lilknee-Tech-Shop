@@ -1,0 +1,31 @@
+
+<van-watermark content="Vant" />
+
+<l-sticky scrollTop="{{scrollTop}}">
+  <l-notice-bar show="{{true}}">由于微信小程序规定，如果您使用的是ios系统则无法进行支付</l-notice-bar>
+</l-sticky>
+
+<view wx:for="{{productlist}}" wx:key="id">
+  <van-card class="van-card" bindtap="jump" data-index2="{{item}}"
+  num="1"
+  price="{{item.price}}"
+  desc="{{item.descs}}"
+  title="{{item.title}}"
+  thumb="{{item.thumb}}"
+>
+  <view slot="footer">
+    
+    <van-button color="#7232dd" bindtap="zuhzi" wx:if="{{!isIOS}}" size="mini" type="primary" bindtap="zuhzi" bindtap="zhifu" data-index="{{item}}">购买</van-button>
+  </view>
+</van-card>
+
+
+</view>
+
+
+
+
+
+
+
+

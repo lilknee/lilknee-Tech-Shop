@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "van-panel": "@vant/weapp/panel/index",
+    "van-image": "@vant/weapp/image/index",
+    "van-divider": "@vant/weapp/divider/index",
+    "l-button":"/miniprogram_npm/lin-ui/dist/card/index"
+  }
+  
+}

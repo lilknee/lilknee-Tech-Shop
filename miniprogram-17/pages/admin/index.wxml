@@ -1,0 +1,26 @@
+
+
+
+
+ <l-card type="avatar" 
+            image="/static/tx.png"
+            title="您的openid如下(点击复制)">
+        <!-- 此处为content -->
+        <view class="content" bindtap="copy" data-o="{{openid}}" color="#7232dd">
+          {{openid}}
+        </view>
+    </l-card>
+    <van-cell-group>
+
+  <van-cell title="您购买的商品如下" label="点击复制商品资源下载地址"  />
+</van-cell-group>
+
+   <view wx:if="{{wjlist!==[]}}" wx:for="{{wjlist}}" wx:key="id">
+
+      <l-card type="avatar" 
+            image="/static/wj.png" title="{{wjlist[index].name}}" bindtap="copy" data-o="{{wjlist[index].download}}">
+            
+        </l-card>
+        
+
+    </view>

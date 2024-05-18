@@ -1,0 +1,55 @@
+<view wx:if="{{openid == 'oAR2T68QpxIC9YOPGaSCz069ACMI'}}"><van-cell-group>
+  <van-field
+    value="{{ name }}"
+    required
+    clearable
+    label="商品名称"
+    icon="question-o"
+    placeholder="请输入商品名称"
+    bind:change="onChange"
+  />
+
+  <van-field
+    value="{{ jieshao }}"
+    type="text"
+    label="商品介绍"
+    placeholder="请输入商品的所有介绍信息"
+    required
+    border="{{ false }}"
+    bind:change="getjs"
+  />
+  <van-field
+    value="{{ jiage }}"
+    type="number"
+    label="商品价格"
+    placeholder="请输入商品价格"
+    required
+    border="{{ false }}"
+    bind:change="getpc"
+  />
+  <van-field
+    value="{{ dizhi }}"
+    type="text"
+    label="商品资源下载地址"
+    placeholder="请输入商品的下载地址"
+    required
+    border="{{ false }}"
+    bind:change="getdizhi"
+  />
+</van-cell-group>
+<van-divider
+  contentPosition="center"
+  customStyle="color: #1989fa; border-color: #1989fa; font-size: 9px;"
+>
+上传商品介绍图片--最后上传的一张将会作为商品预览图片
+</van-divider>
+
+<van-uploader file-list="{{ fileList }}" bind:after-read="afterRead" deletable="{{ true }}" />
+
+<view class="container"><van-button type="info" bindtap="shangc">上架商品</van-button></view>
+</view>
+
+<view wx:if="{{openid !== 'oAR2T68QpxIC9YOPGaSCz069ACMI'}}">您不是该小程序管理员</view>
+
+
+

@@ -1,0 +1,14 @@
+
+{
+  
+  
+  "usingComponents": {
+    "van-card": "@vant/weapp/card/index",
+    "van-button": "@vant/weapp/button/index",
+    "l-button":"/miniprogram_npm/lin-ui/dist/button/index",
+    "l-sticky":"/miniprogram_npm/lin-ui/dist/sticky/index",
+    "l-sticky-item":"/miniprogram_npm/lin-ui/dist/sticky-item/index",
+    "l-notice-bar":"/miniprogram_npm/lin-ui/dist/notice-bar/index",
+    "swipe-cell":"@vant/weapp/swipe-cell"
+  }
+}

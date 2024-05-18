@@ -1,0 +1,54 @@
+{
+
+
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/admin/index",
+    "pages/desc/index",
+    "pages/sc/index"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "lilknee科技",
+    "navigationBarTextStyle":"black"
+  },
+"usingComponents": {
+  "van-button": "@vant/weapp/button/index",
+  "van-icon": "@vant/weapp/icon/index",
+  "van-grid": "@vant/weapp/grid/index",
+  "van-grid-item": "@vant/weapp/grid-item/index",
+  "van-card": "@vant/weapp/card/index",
+  "van-tabbar": "@vant/weapp/tabbar/index",
+  "van-tabbar-item": "@vant/weapp/tabbar-item/index"
+  
+},
+
+
+"tabBar": {
+  "list": [{
+    "pagePath": "pages/index/index",
+    "text": "首页",
+    "iconPath": "static/首页.png",
+    "selectedIconPath": "static/首页.png"
+  },
+  {
+    "pagePath": "pages/admin/index",
+    "text": "我的",
+    "iconPath": "static/我的.png",
+    "selectedIconPath": "static/我的.png"
+  },
+  {
+    "pagePath": "pages/sc/index",
+    "text": "商品管理",
+    "iconPath": "static/sc.png",
+    "selectedIconPath": "static/sc.png"
+  }
+  
+],
+"color": "",
+"selectedColor": "blue"
+}
+
+}

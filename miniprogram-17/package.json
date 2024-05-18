@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "@vant/weapp": "^1.10.23",
+    "js-md5": "^0.7.3",
+    "lin-ui": "^0.9.13",
+    "minio": "^7.1.3"
+  },
+  "name": "lin-ui",
+  "version": "1.0.0",
+  "main": ".eslintrc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

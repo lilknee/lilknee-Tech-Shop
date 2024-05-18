@@ -1,0 +1,20 @@
+<van-panel title="{{item.title}}" >
+  <van-divider
+  contentPosition="center"
+  customStyle="color: #1989fa; border-color: #1989fa; font-size: 10px;"
+>
+  本店出售的源码都是lilknee自己编写的，不会有任何版权问题
+</van-divider>
+  <l-card type="primary">
+        <!-- 此处为content -->
+        <view class="content">
+        {{item.descs}}
+        </view>
+    </l-card>
+    <view wx:for="{{tupianlist.data}}" wx:if="{{tupianlist.data !== 'weikong'}}" wx:key="id">
+    <van-image width="390" height="300" src="{{item.url}}" bindtap="previewImage" data-src="{{item.url}}"/>
+</view>
+
+
+</van-panel>
+<van-button wx:if="{{!isIOS}}" size="small" type="danger" bindtap="zhifu" data-index="{{item}}" >购买</van-button>

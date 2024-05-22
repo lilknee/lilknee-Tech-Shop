@@ -6,3 +6,6 @@
 - 库自行安装
 
 **--------------peace out-----**
+## 小程序演示图
+![store.jpg](https://img2.imgtp.com/2024/05/22/jATPEodL.jpg)
+* 更多内容可在微信搜索：lilknee科技小卖部
